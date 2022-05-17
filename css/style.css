@@ -191,7 +191,7 @@ a {
 }
 
 h2 {
-  color: rgb(255, 0, 0);
+  color: rgb(205 79 64);
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 200;
   font-size: 16px;
@@ -203,7 +203,7 @@ h2 {
   margin: 0 auto;
   display: block;
   border-radius: 50px;
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid rgb(205 79 64);
   height: 50px;
   width: 30px;
   position: relative;
@@ -211,7 +211,7 @@ h2 {
 
 .move {
   position: absolute;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(205 79 64);
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -1315,10 +1315,23 @@ h2 {
   .footer ul{
     padding-left: 2rem;
   }
+  .accordion-item{
+    width: 100%;
+  }
+  .item-content{
+    margin-left: 0px;
+  }
+  .mouse {
+    height: 40px;
+    width: 25px;
+  }
 }
 /* =================max-width: 425px================ */
 
 @media only screen and (max-width: 425px) {
+  h2{
+    font-size: 14px;
+  }
   .portfolio-content .about-text {
     margin-top: 20px;
   }
@@ -1368,10 +1381,22 @@ h2 {
     font-size: 12px;
   }
   .box{
-    max-height: 250px;
+    max-height: 300px;
   }
   .vintage h2 {
-    top: 35%;
+    top: 50%;
     font-size: 18px;
+  }
+  .content{
+    padding: 0;
+  }
+  .services .service-inner{
+    margin: 0;
+  }
+  .item-content label{
+    font-size: 13px;
+  }
+  #myBtn{
+    right: 15px;
   }
 }
