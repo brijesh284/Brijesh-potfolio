@@ -1325,9 +1325,16 @@ h2 {
   #scroll-down-animation {
     left: 37%;
   }
+  .portfolio-content .bg-img{
+    width: 200px;
+    height: 200px;
+  }
   .common-title h1 {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+  .experience-main{
+    padding: 60px 0px;
   }
   .item-list h4 {
     font-size: 15px;
@@ -1359,5 +1366,12 @@ h2 {
   }
   .footer .footer-text p{
     font-size: 12px;
+  }
+  .box{
+    max-height: 250px;
+  }
+  .vintage h2 {
+    top: 35%;
+    font-size: 18px;
   }
 }
