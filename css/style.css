@@ -33,6 +33,10 @@
   src: url(../fonts/Poppins-Thin.ttf);
 }
 /*# sourceMappingURL=font.css.map */
+
+
+
+
 * {
   padding: 0;
   margin: 0;
@@ -131,6 +135,7 @@ a {
   color: rgb(205 79 64);
 }
 /* portfolio-content  */
+
 .portfolio-content {
   height: 90vh;
   display: flex;
@@ -145,6 +150,31 @@ a {
   overflow: hidden;
   border-radius: 50%;
   margin: auto;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+
+@keyframes sliderShape {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
 }
 .portfolio-content .bg-img img {
   transform: scaleX(-1);
@@ -1245,22 +1275,44 @@ h2 {
   transform: rotate(270deg);
 }
 #myBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
-  border: none;
-  outline: none;
   background-color: rgb(205 79 64);
+  border: none;
   color: white;
   cursor: pointer;
-  padding: 5px 22px;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: slidradius 5s linear infinite;
+  display: block;
+  -webkit-animation: slidradius 5s linear infinite;
 }
 
+
+@keyframes slidradius {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  34% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
+}
 #myBtn:hover {
   background-color: #555;
 }
