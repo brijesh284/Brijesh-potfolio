@@ -1289,13 +1289,13 @@ h2 {
   overflow: hidden;
   border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
   will-change: border-radius, transform, opacity;
-  animation: slidradius 5s linear infinite;
+  animation: myBtn 5s linear infinite;
   display: block;
-  -webkit-animation: slidradius 5s linear infinite;
+  -webkit-animation: myBtn 5s linear infinite;
 }
 
 
-@keyframes slidradius {
+@keyframes myBtn {
   0%,
   100% {
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
