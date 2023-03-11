@@ -43,6 +43,9 @@ body {
   font-family: Poppins-Medium;
   color: rgb(0, 0, 0);
   transition: all ease-in-out 0.5s;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 a {
   color: #000;
@@ -192,15 +195,39 @@ img {
   transform: scaleX(-1);
 } */
 .portfolio-content .about-text h1 {
-  font-size: 50px;
+  font-size: 58px;
   font-family: "Playfair Display SC", serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
-.portfolio-content .about-text h4 {
-  font-size: 14px;
+.portfolio-content .about-text h1 span {
+  color: rgb(205 79 64);
+}
+.typewriter {
+  font-size: 18px;
   color: rgb(205 79 64);
   margin-bottom: 10px;
   text-transform: uppercase;
+  width: 21.5ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #212121;
+  animation: cursor 1s step-start infinite, text 5s steps(12) alternate infinite;
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: #212121;
+  }
+}
+
+@keyframes text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20ch;
+  }
 }
 .portfolio-content .about-text p {
   font-size: 16px;
@@ -1375,6 +1402,8 @@ h2 {
 .footer .footer-text ul li img {
   margin-right: 10px;
 }
+/* loading page */
+
 /* Go to top */
 .Go-top {
   transform: rotate(270deg);
@@ -1504,6 +1533,9 @@ h2 {
   .tabs__btn span {
     display: none;
   }
+  .about-text {
+    margin-top: 20px;
+  }
 }
 /* =================max-width: 425px================ */
 
@@ -1535,13 +1567,9 @@ h2 {
   .portfolio-content .about-text {
     margin-top: 20px;
   }
-  #scroll-down-animation {
+  /* #scroll-down-animation {
     display: none;
-  }
-  .portfolio-content .bg-img {
-    width: 200px;
-    height: 200px;
-  }
+  } */
   .common-title h1 {
     font-size: 25px;
     margin-bottom: 20px;
