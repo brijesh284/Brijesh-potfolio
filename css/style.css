@@ -9,9 +9,24 @@ body {
   color: #fff;
   background-color: #000;
   transition: all ease-in-out 0.5s;
-  height: 100%;
+  height: auto;
   width: 100%;
   position: relative;
+  cursor: none;
+  scroll-behavior: smooth;
+}
+/*============================
+The juicy stuff
+============================*/
+#ball {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999;
 }
 a {
   color: #000;
@@ -1321,7 +1336,6 @@ img {
 }
 .our-project .tab-inner {
   border: 1px solid #000000;
-  border-radius: 8px;
   background-color: #000000;
   box-shadow: 0 8px 12px rgb(58 45 0 / 12%);
   overflow: hidden;
@@ -1377,12 +1391,7 @@ img {
   background-color: #1d1d1d;
   font-weight: 600;
 }
-/* .tabs__btn:hover {
-  color: rgb(205 79 64);
-}
-.tabs__btn:hover.active {
-  color: rgb(205 79 64);
-} */
+
 .tabs__body {
   display: none;
   font-size: 18px;
