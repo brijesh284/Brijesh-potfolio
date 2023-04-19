@@ -1492,9 +1492,15 @@ img {
   font-size: 14px;
   width: 80%;
 }
+
 .footer ul {
-  padding: 0px;
   margin: 0px;
+}
+.footer .footer-services {
+  padding-left: 20px;
+}
+.footer .footer-last-line ul {
+  padding-left: 0px;
 }
 .footer ul li {
   line-height: 40px;
@@ -1577,6 +1583,9 @@ img {
 /* =================max-width: 992px================ */
 
 @media only screen and (max-width: 992px) {
+  #ball {
+    display: none;
+  }
   .header-main .navbar-brand {
     color: #fff;
   }
@@ -1700,6 +1709,12 @@ img {
   }
   .our-project {
     padding-bottom: 50px;
+  }
+  .footer h2 {
+    font-size: 50px;
+  }
+  .footer h4 {
+    margin-bottom: 40px;
   }
   .common-divider {
     padding: 50px 0px 50px 0px;
