@@ -1593,7 +1593,28 @@ img {
 }
 /* =================max-width: 767px================ */
 @media only screen and (max-width: 767px) {
-  .tabs__btn span {
+  .swiper-container {
+    height: 70vh;
+    border-radius: 20px;
+  }
+  .Projects-lead-body {
+    height: 70vh;
+  }
+  .swiper-container.nav-slider .swiper-slide .content .title {
+    font-size: 12px;
+  }
+  .swiper-slide .content {
+    display: none;
+  }
+  .swiper-slide {
+    width: 100%;
+  }
+  .swiper-container {
+    width: 100%;
+  }
+  .swiper-container.nav-slider {
+    width: 0;
+    padding-left: 0;
     display: none;
   }
   .about-text {
@@ -1602,12 +1623,7 @@ img {
   .swiper-slide .content .title {
     font-size: 30px;
   }
-  .Projects-lead-body {
-    height: 80vh;
-  }
-  .swiper-container {
-    height: 80vh;
-  }
+
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
@@ -1679,7 +1695,7 @@ img {
     margin-bottom: 20px;
   }
   .experience-main {
-    padding: 60px 0px;
+    padding: 50px 0px 0px;
   }
   .item-list h4 {
     font-size: 18px;
