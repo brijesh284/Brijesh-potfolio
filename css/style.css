@@ -1406,6 +1406,7 @@ img {
 }
 .footer .footer-services {
   padding-left: 20px;
+  list-style: disc;
 }
 .footer .footer-last-line ul {
   padding-left: 0px;
