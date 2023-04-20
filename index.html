@@ -13,25 +13,22 @@
       name="description"
       content="My portfolio website to showcase the work I have done so far, the services I provide, and all my professional life."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/Projects-slider.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Brijesh Kumbhani</title>
-    <link rel="icon" type="image/x-icon" href="/img/man.png" loading="lazy" />
   </head>
   <body>
-    <!-- The circle that follows !-->
-    <div id="ball"></div>
     <!-- header -->
     <section class="header-main">
       <div class="container">
@@ -169,10 +166,66 @@
         </div>
       </div>
     </section>
+    <!-- experience -->
+    <section class="experience-main">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="experience-left">
+              <h2>My <span>Recent Work</span></h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row text-center">
+              <div class="col-md-3 col-6">
+                <div
+                  class="counter wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay=".3s"
+                >
+                  <h2 class="count-title">04+</h2>
+                  <p class="count-text">Years Of Experience</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div
+                  class="counter wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay=".4s"
+                >
+                  <h2 class="count-title">50+</h2>
+                  <p class="count-text">Project completed</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div
+                  class="counter wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay=".5s"
+                >
+                  <h2 class="count-title">20+</h2>
+                  <p class="count-text">Dev Projects</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div
+                  class="counter wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.6s"
+                >
+                  <h2 class="count-title">97.5%</h2>
+                  <p class="count-text">satisfied Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- work-show -->
     <section class="Project-section" id="sec-wrap">
       <div class="container">
-        <div class="row g-lg-5">
+        <div class="row g-lg-5 g-3">
           <div class="col-md-6">
             <div class="project-wrap-list">
               <a href="https://brijesh284.github.io/H8RO/" target="_blank">
@@ -521,53 +574,6 @@
         </div>
       </div>
     </section>
-    <!-- experience -->
-    <section class="experience-main">
-      <div class="container">
-        <div class="row text-center g-3 g-md-4">
-          <div class="col-md-3">
-            <div
-              class="counter wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay=".3s"
-            >
-              <h2 class="count-title">04+</h2>
-              <p class="count-text">Years Of Experience</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div
-              class="counter wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay=".4s"
-            >
-              <h2 class="count-title">18+</h2>
-              <p class="count-text">Happy Clients</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div
-              class="counter wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay=".5s"
-            >
-              <h2 class="count-title">35+</h2>
-              <p class="count-text">Project Complete</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div
-              class="counter wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.6s"
-            >
-              <h2 class="count-title">5+</h2>
-              <p class="count-text">Coffee With Clients</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Services -->
     <section class="services common-divider" id="Services">
       <div class="container">
@@ -597,7 +603,7 @@
                     />
                   </figure>
                 </div>
-                <p>Web Design</p>
+                <p>Web Designing</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -617,7 +623,7 @@
                     />
                   </figure>
                 </div>
-                <p>web development</p>
+                <p>web Developing</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -637,7 +643,7 @@
                     />
                   </figure>
                 </div>
-                <p>UI/XI Design</p>
+                <p>UI/XI Designing</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -704,372 +710,139 @@
         </div>
       </div>
     </section>
-    <!-- Projects section -->
-    <section class="our-project" id="project">
+    <!-- Projects-slider -->
+    <section class="Projects-slider common-divider" id="project">
       <div class="container">
         <div class="common-title">
           <h1>latests <span>Works</span></h1>
         </div>
-        <div class="tab-inner">
-          <div class="tabs">
-            <nav class="tabs__navigation">
-              <div class="tabs__navigation_inner">
-                <button class="tabs__btn active" type="button">
-                  <img
-                    src="img/html-svgrepo-com.svg"
-                    alt="html-svgrepo-com"
-                    loading="lazy"
-                  />
-                  <span>Convertible</span>
-                </button>
-                <button class="tabs__btn" type="button">
-                  <img
-                    src="img/react-svgrepo-com.svg"
-                    alt="react-svgrepo-com"
-                    loading="lazy"
-                  />
-                  <span>React JS</span>
-                </button>
-                <button class="tabs__btn" type="button">
-                  <img
-                    src="img/wordpress-svgrepo-com.svg"
-                    alt="wordpress-svgrepo-com"
-                    loading="lazy"
-                  />
-                  <span>Wordpress</span>
-                </button>
-                <button class="tabs__btn" type="button">
-                  <img
-                    src="img/shopify-logo-svgrepo-com.svg"
-                    alt="shopify-logo-svgrepo-com"
-                    loading="lazy"
-                  />
-                  <span>Shopify</span>
-                </button>
-              </div>
-            </nav>
-            <div class="tabs__content">
-              <div class="tabs__body active">
+        <div class="Projects-lead-body">
+          <div class="swiper-container main-slider loading">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/rkbooks.png)"
+                >
+                  <img src="img/rkbooks.png" class="entity-img" />
+                </figure>
                 <div class="content">
-                  <div class="row lg-g-5 g-3 g-md-5">
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://brijesh284.github.io/rkbooks/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/rkbooks.png"
-                              alt="rk books"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>RK Books</h2>
-                            <p>RK Books is a Online gaming platform.</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://brijesh284.github.io/shopmax/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/shopmax.png"
-                              alt="shop max"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Shop max</h2>
-                            <p>ShopMax is a Ecommerce web template</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://brijesh284.github.io/Evotech/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/Evotech.png"
-                              alt="Evotech"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Evotech - technology</h2>
-                            <p>Fully responsive site and pixel Perfect</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://brijesh284.github.io/H8RO/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/H8RO.png"
-                              alt="H8RO-Web Page"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>H8RO</h2>
-                            <p>adobe Xd to convert HTML H8RO</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://brijesh284.github.io/Organix/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/Organix.png"
-                              alt="Organix"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Organix - store</h2>
-                            <p>Organix is a grocery store</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://brijesh284.github.io/haircare/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/haircare.png"
-                              alt="haircare"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>haircare - hair salon</h2>
-                            <p>Figma to convert HTML.</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://brijesh284.github.io/FitnessFreak/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/fitness.png"
-                              alt="fitness"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>fitness - freak</h2>
-                            <p>Figma to convert HTML.</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  <p class="title">RK-Books</p>
+                  <span class="caption">Online gaming platform.</span>
                 </div>
               </div>
-              <div class="tabs__body">
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/qortor.png)"
+                >
+                  <img src="img/qortor.png" class="entity-img" />
+                </figure>
                 <div class="content">
-                  <div class="row lg-g-5 g-3 g-md-5">
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://qortor-landing.vercel.app/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/qortor.png"
-                              alt="qortor"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Qortor-landing</h2>
-                            <p>Qortor Services</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="https://www.freeport.fyi/" target="_blank">
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/freeport.png"
-                              alt="freeport"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>freeport</h2>
-                            <p>freeport</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="https://dev.eflexforce.com/" target="_blank">
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/eflexforce.png"
-                              alt="eflexforce"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>eflexforce</h2>
-                            <p>eflexforce</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="https://www.724lobby.com/" target="_blank">
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/724lobby.png"
-                              alt="724lobby"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>724lobby</h2>
-                            <p>724lobby</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  <p class="title">Qortor</p>
+                  <span class="caption">Qortor Services</span>
                 </div>
               </div>
-              <div class="tabs__body">
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/artist.png)"
+                >
+                  <img src="img/artist.png" class="entity-img" />
+                </figure>
                 <div class="content">
-                  <div class="row lg-g-5 g-3 g-md-5">
-                    <div class="col-lg-4 col-md-6">
-                      <a href="https://farmetos.com/" target="_blank">
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/farmetos.png"
-                              alt="farmetos"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Farmetos</h2>
-                            <p>Nursery Services</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="https://shreeindianexport.com/" target="_blank">
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/shreeindianexport.png"
-                              alt="shreeindianexport"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Shree Indian Export</h2>
-                            <p>Woocommerce</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  <p class="title">Artist- Store</p>
+                  <span class="caption"
+                    >Artist is a UK base online Art Galleries.</span
+                  >
                 </div>
               </div>
-              <div class="tabs__body">
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/giliarto.png)"
+                >
+                  <img src="img/giliarto.png" class="entity-img" />
+                </figure>
                 <div class="content">
-                  <div class="row lg-g-5 g-3 g-md-5">
-                    <div class="col-lg-4 col-md-6">
-                      <a
-                        href="https://theme636-art-store.myshopify.com/"
-                        target="_blank"
-                      >
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/artist.png"
-                              alt="artist"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Artist- Store</h2>
-                            <p>Artist is a UK base online Art Galleries.</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="https://www.giliarto.com/" target="_blank">
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/giliarto.png"
-                              alt="giliarto"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Giliarto</h2>
-                            <p>online jewellery shop</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="https://www.shuruistudio.com/" target="_blank">
-                        <div>
-                          <div class="box vintage">
-                            <img
-                              src="img/shuruistudio.png"
-                              alt="shuruistudio"
-                              class="img-fluid"
-                              decoding="async"
-                              loading="lazy"
-                            />
-                            <h2>Shurui Studio</h2>
-                            <p>online jewellery shop</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
+                  <p class="title">giliarto</p>
+                  <span class="caption">online jewellery shop</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/shuruistudio.png)"
+                >
+                  <img src="img/shuruistudio.png" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">shuruistudio</p>
+                  <span class="caption">online jewellery shop</span>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+          </div>
+
+          <!-- Thumbnail navigation -->
+          <div class="swiper-container nav-slider loading">
+            <div class="swiper-wrapper" role="navigation">
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/rkbooks.png)"
+                >
+                  <img src="img/rkbooks.png" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">RK-Books</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/qortor.png)"
+                >
+                  <img src="img/qortor.png" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">Qortor</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/artist.png)"
+                >
+                  <img src="img/artist.png" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">artist</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/giliarto.png)"
+                >
+                  <img src="img/giliarto.png" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">giliarto</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <figure
+                  class="slide-bgimg"
+                  style="background-image: url(img/shuruistudio.png)"
+                >
+                  <img src="img/shuruistudio.png" class="entity-img" />
+                </figure>
+                <div class="content">
+                  <p class="title">shuruistudio</p>
                 </div>
               </div>
             </div>
@@ -1077,107 +850,115 @@
         </div>
       </div>
     </section>
+
     <!-- testimonial  -->
-    <section id="testim" class="testim">
+    <section class="testimonial-sec common-divider">
       <div class="container">
         <div class="common-title">
           <h1>client <span>saying</span></h1>
         </div>
-        <div class="wrap">
-          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
-          <ul id="testim-dots" class="dots">
-            <li class="dot active"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-          </ul>
-          <div id="testim-content" class="cont">
-            <div class="active">
-              <div class="img">
-                <img
-                  src="img/girl.png"
-                  alt="man"
-                  class="img-fluid"
-                  loading="lazy"
-                />
+        <div class="testim" id="testim">
+          <div class="wrap">
+            <span
+              id="right-arrow"
+              class="arrow right fa fa-chevron-right"
+            ></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+            <ul id="testim-dots" class="dots">
+              <li class="dot active"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ul>
+            <div id="testim-content" class="cont">
+              <div class="active">
+                <div class="img">
+                  <img
+                    src="img/girl.png"
+                    alt="man"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <h2>Camille Jenkins-Watson</h2>
+                <p>
+                  "Brijesh was easy to work with. He followed instructions well
+                  and he took the initiative to find video content and improved
+                  our landing page design creating a clean modern look. I gave
+                  him little direction and let him create on his own and he
+                  nailed it. We are going to start another contract with him ."
+                </p>
               </div>
-              <h2>Camille Jenkins-Watson</h2>
-              <p>
-                "Brijesh was easy to work with. He followed instructions well
-                and he took the initiative to find video content and improved
-                our landing page design creating a clean modern look. I gave him
-                little direction and let him create on his own and he nailed it.
-                We are going to start another contract with him ."
-              </p>
-            </div>
-            <div>
-              <div class="img">
-                <img
-                  src="img/man.png"
-                  alt="girl"
-                  class="img-fluid"
-                  loading="lazy"
-                />
+              <div>
+                <div class="img">
+                  <img
+                    src="img/man.png"
+                    alt="girl"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <h2>Jan Fischer</h2>
+                <p>
+                  " Nice work, Hardworking, and smart Brijesh , Good knowledge
+                  in web designing and development , I am impressed with the
+                  work."
+                </p>
               </div>
-              <h2>Jan Fischer</h2>
-              <p>
-                " Nice work, Hardworking, and smart Brijesh , Good knowledge in
-                web designing and development , I am impressed with the work."
-              </p>
-            </div>
-            <div>
-              <div class="img">
-                <img
-                  src="img/man (1).png"
-                  alt="man"
-                  class="img-fluid"
-                  loading="lazy"
-                />
+              <div>
+                <div class="img">
+                  <img
+                    src="img/man (1).png"
+                    alt="man"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <h2>Ben</h2>
+                <p>
+                  "Brijesh and his team did a fantastic job. They understood the
+                  requirements completely and provided me with the page on time.
+                  I highly recommend this team."
+                </p>
               </div>
-              <h2>Ben</h2>
-              <p>
-                "Brijesh and his team did a fantastic job. They understood the
-                requirements completely and provided me with the page on time. I
-                highly recommend this team."
-              </p>
-            </div>
-            <div>
-              <div class="img">
-                <img
-                  src="img/woman.png"
-                  alt="woman"
-                  class="img-fluid"
-                  loading="lazy"
-                />
+              <div>
+                <div class="img">
+                  <img
+                    src="img/woman.png"
+                    alt="woman"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <h2>Diana Clark</h2>
+                <p>
+                  "Brijesh was fast, efficient, reliable, and did his work with
+                  excellence. I look forward to hiring him again."
+                </p>
               </div>
-              <h2>Diana Clark</h2>
-              <p>
-                "Brijesh was fast, efficient, reliable, and did his work with
-                excellence. I look forward to hiring him again."
-              </p>
-            </div>
-            <div>
-              <div class="img">
-                <img
-                  src="img/man (2).png"
-                  alt="man"
-                  class="img-fluid"
-                  loading="lazy"
-                />
+              <div>
+                <div class="img">
+                  <img
+                    src="img/man (2).png"
+                    alt="man"
+                    class="img-fluid"
+                    loading="lazy"
+                  />
+                </div>
+                <h2>Rajendra singh</h2>
+                <p>
+                  he helped our non-profit build a beautiful, compelling
+                  website–one time, on budget, and with quick, responsive
+                  support. Highly recommend!!!
+                </p>
               </div>
-              <h2>Rajendra singh</h2>
-              <p>
-                he helped our non-profit build a beautiful, compelling
-                website–one time, on budget, and with quick, responsive support.
-                Highly recommend!!!
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- contact us -->
     <section
       class="contact-us common-divider wow fadeInUp"
@@ -1293,14 +1074,23 @@
     <!-- scripts -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/fontawsome.js"></script>
-    <script src="js/wow.min.js"></script>
     <script src="js/preloader.js"></script>
-    <!-- Tabs-section -->
-    <script src="js/tabs.js"></script>
     <!-- dropdown skills -->
     <script src="js/skills.js"></script>
     <!-- testimonial -->
     <script src="js/testimonial.js"></script>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <!--cursor  -->
+    <script src="js/cursor.js"></script>
+    <!-- projectSlider -->
+    <script src="js/projectSlider.js"></script>
+    <!-- WOW animation -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--  -->
     <script>
       //Get the button
       var mybutton = document.getElementById("myBtn");
@@ -1326,14 +1116,6 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-    </script>
-    <!--cursor  -->
-    <script src="js/cursor.js"></script>
-    <!-- smooth  -->
-    <!-- <script src="js/smooth .js"></script> -->
-    <!-- wow -->
-    <script>
-      new WOW().init();
     </script>
   </body>
 </html>
