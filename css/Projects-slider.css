@@ -75,6 +75,7 @@
   color: #ff8001;
   text-align: center;
   padding: 0px;
+  background-color: #00000038;
 }
 .swiper-slide .content .title {
   font-size: 55px;
@@ -88,6 +89,7 @@
   line-height: 1.4;
   transform: translateX(50px);
   opacity: 0;
+  display: none;
   transition: opacity 0.3s ease, transform 0.7s ease;
 }
 .swiper-slide .content .caption.show {
