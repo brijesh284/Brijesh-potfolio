@@ -276,6 +276,9 @@ img {
   width: 90%;
   font-family: CircularStd-Medium;
 }
+.portfolio-content .about-text .about-now-btn .book-call {
+  margin-right: 30px;
+}
 
 /* scroll-down-animation */
 .banner-right {
