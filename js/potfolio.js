@@ -286,7 +286,7 @@ const ItemDetail = [
     Size: "Small",
     link: "https://work.vaux.co.in/h8ro/",
     Image: "../img/Thumbnail-4.mp4",
-    posture: "img/h8ro.png",
+    posture: "img/H8RO.png",
     Main: "h8ro",
     Des: "- Redesigning new and beauty professionals.",
     Brading: ["Web Development"],
