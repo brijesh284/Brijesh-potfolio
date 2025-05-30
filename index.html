@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Brijesh Kumbhani" />
     <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, Shopify, Wordpress ,UI/XI Design"
+      name="title"
+      content="Brijesh Kumbhani - Front-end Developer & UI/UX Designer"
     />
     <meta
       name="description"
-      content="My portfolio website to showcase the work I have done so far, the services I provide, and all my professional life."
+      content="Experienced Front-end Developer & UI/UX Designer with 4+ years of expertise in creating pixel-perfect websites. Specializing in WordPress, Shopify, and modern web technologies."
     />
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <meta
+      name="keywords"
+      content="Front-end Developer, UI/UX Designer, Web Development, WordPress Developer, Shopify Expert, HTML, CSS, JavaScript, React.js, Web Design, Responsive Design, Surat Developer"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#ff8001" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brijesh284.github.io/" />
+    <meta
+      property="og:title"
+      content="Brijesh Kumbhani - Front-end Developer & UI/UX Designer"
+    />
+    <meta
+      property="og:description"
+      content="Experienced Front-end Developer & UI/UX Designer with 4+ years of expertise in creating pixel-perfect websites. Specializing in WordPress, Shopify, and modern web technologies."
+    />
+    <meta property="og:image" content="img/favicon.svg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://brijesh284.github.io/" />
+    <meta
+      property="twitter:title"
+      content="Brijesh Kumbhani - Front-end Developer & UI/UX Designer"
+    />
+    <meta
+      property="twitter:description"
+      content="Experienced Front-end Developer & UI/UX Designer with 4+ years of expertise in creating pixel-perfect websites. Specializing in WordPress, Shopify, and modern web technologies."
+    />
+    <meta property="twitter:image" content="img/favicon.svg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="apple-touch-icon" href="img/favicon.svg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://brijesh284.github.io/" />
+
+    <!-- Stylesheets -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
@@ -22,7 +64,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"
     />
-    <!-- Icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
@@ -31,13 +72,20 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/Projects-slider.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Brijesh Kumbhani</title>
+
+    <!-- Performance Optimizations -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="css/bootstrap.min.css" as="style" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+
+    <title>Brijesh Kumbhani - Front-end Developer & UI/UX Designer</title>
   </head>
   <body>
     <!-- header -->
     <section class="header-main">
       <div class="container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
           <a class="navbar-brand" href="#">Brijesh</a>
           <button
             class="navbar-toggler"
@@ -103,10 +151,13 @@
         <div class="row align-items-end">
           <div class="col-md-8">
             <div class="about-text">
-              <div class="typewriter">Front end Developer</div>
+              <div class="typewriter" aria-label="Role">
+                Front end Developer
+              </div>
 
               <h1>
-                Hey<span>,</span> I'm <span>Brijesh</span> <br />
+                Hey<span aria-hidden="true">,</span> I'm <span>Brijesh</span>
+                <br />
                 from India.
               </h1>
               <p
@@ -114,18 +165,20 @@
                 data-wow-duration="0.5s"
                 data-wow-delay=".5s"
               >
-                I'm Brijesh Kumbhani. High-level experience in web design and
-                web Development with good knowledge, I'm producing quality and
-                pixel-perfect work.
+                I'm Brijesh Kumbhani, a front-end developer with extensive
+                experience in web design and development. I specialize in
+                producing high-quality, pixel-perfect work that meets modern web
+                standards.
               </p>
               <div class="about-now-btn">
                 <a
                   href="img/Brijesh- Resume_2023.pdf"
                   class="contact-btn book-call wow fadeInUp"
                   target="_blank"
+                  rel="noopener"
                   data-wow-duration="0.5s"
                   data-wow-delay="0.5s"
-                  >view CV</a
+                  >View CV</a
                 >
                 <a
                   href="#contact"
@@ -144,7 +197,12 @@
                 data-wow-duration="0.5s"
                 data-wow-delay=".7s"
               >
-                <a href="https://github.com/brijesh284" target="_blank">
+                <a
+                  href="https://github.com/brijesh284"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub Profile"
+                >
                   <img
                     src="img/github-brands.svg"
                     class="img-fluid"
@@ -152,7 +210,12 @@
                     loading="lazy"
                   />
                 </a>
-                <a href="www.linkedin.com/in/brijesh-kumbhani" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/brijesh-kumbhani"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn Profile"
+                >
                   <img
                     src="img/linkedin-in-brands.svg"
                     class="img-fluid"
@@ -161,7 +224,12 @@
                   />
                 </a>
 
-                <a href="https://wa.me/+919624388048" target="_blank">
+                <a
+                  href="https://wa.me/+919624388048"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="WhatsApp Contact"
+                >
                   <img
                     src="img/whatsapp.png"
                     class="img-fluid"
@@ -199,7 +267,7 @@
                   data-wow-delay=".3s"
                 >
                   <h2 class="count-title">04+</h2>
-                  <p class="count-text">Experience</p>
+                  <p class="count-text">Years Experience</p>
                 </div>
               </div>
               <div class="col-md-3 col-6">
@@ -209,7 +277,7 @@
                   data-wow-delay=".4s"
                 >
                   <h2 class="count-title">50+</h2>
-                  <p class="count-text">Project completed</p>
+                  <p class="count-text">Projects Completed</p>
                 </div>
               </div>
               <div class="col-md-3 col-6">
@@ -229,7 +297,7 @@
                   data-wow-delay="0.6s"
                 >
                   <h2 class="count-title">97.5%</h2>
-                  <p class="count-text">satisfied Clients</p>
+                  <p class="count-text">Client Satisfaction</p>
                 </div>
               </div>
             </div>
