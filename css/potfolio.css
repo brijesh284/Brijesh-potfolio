@@ -1,0 +1,836 @@
+@import url(..//css/font.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins-Medium;
+  color: #fff;
+  background-color: #000;
+  transition: all ease-in-out 0.5s;
+  height: auto;
+  width: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+/* LogoBarSection */
+
+h3 {
+  margin: 0px;
+}
+
+.WeatherLogoLink {
+  display: flex;
+  cursor: auto;
+}
+
+.LogoBarText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #fff;
+  font-family: "Matter-Light";
+}
+
+.TempBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.LiveTempBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LogoBarText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.VauxLogo {
+  width: 100%;
+}
+
+.LogoLink {
+  text-decoration: none;
+}
+.LogoLink h1 {
+  font-size: 36px;
+  cursor: pointer;
+  font-family: CircularStd-Bold;
+  color: #ff8001;
+  text-decoration: none;
+}
+
+.TempUnit {
+  margin-left: 3px;
+}
+
+.LogoBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.Per {
+  margin-left: 3px;
+}
+
+.CityName {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* AboutWeb */
+
+.HeadingOfWeb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+}
+
+.AboutWebHeading {
+  width: 100%;
+  text-align: center;
+  font-size: 56px;
+  line-height: 68px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0;
+  font-family: "Farro-SemiBoldLucky";
+}
+
+.Portfolio {
+  background: linear-gradient(
+    255.25deg,
+    #5125dc 54.44%,
+    #b21fca 70.81%,
+    #cf1b51 84.08%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.AboutWeb {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* NavBar */
+
+.NavLink {
+  font-size: 20px;
+  line-height: 21px;
+  color: #a8a8a8;
+  font-weight: 300;
+  font-family: "Matter-Light";
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  border-bottom: 2px solid rgba(128, 128, 128, 0);
+  transition: all 0.3s;
+}
+
+.NavLink::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0px;
+  background-color: grey;
+  transition: all 0.3s;
+}
+
+.TextAnimation {
+  height: 35px;
+  overflow: hidden;
+}
+
+.letter {
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.TextAnimation:hover .letter {
+  transform: translateY(-120%);
+  /* transition: all 0.2s; */
+}
+
+.block {
+  padding: 2px 10px;
+  height: 100%;
+  display: flex;
+}
+
+.block:last-child {
+  color: #ff8001;
+}
+
+.letter:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  transition-delay: 0.02s;
+}
+
+.letter:nth-child(3) {
+  transition-delay: 0.04s;
+}
+
+.letter:nth-child(4) {
+  transition-delay: 0.06s;
+}
+
+.letter:nth-child(5) {
+  transition-delay: 0.08s;
+}
+
+.letter:nth-child(6) {
+  transition-delay: 0.1s;
+}
+
+.letter:nth-child(7) {
+  transition-delay: 0.12s;
+}
+
+.letter:nth-child(8) {
+  transition-delay: 0.14s;
+}
+
+.letter:nth-child(9) {
+  transition-delay: 0.16s;
+}
+
+.letter:nth-child(10) {
+  transition-delay: 0.18s;
+}
+
+.letter:nth-child(11) {
+  transition-delay: 0.2s;
+}
+
+.letter:nth-child(12) {
+  transition-delay: 0.22s;
+}
+
+.letter:nth-child(13) {
+  transition-delay: 0.24s;
+}
+
+.letter:nth-child(14) {
+  transition-delay: 0.26s;
+}
+
+.letter:nth-child(15) {
+  transition-delay: 0.28s;
+}
+
+.letter:nth-child(16) {
+  transition-delay: 0.3s;
+}
+
+.letter:nth-child(17) {
+  transition-delay: 0.32s;
+}
+
+.NavLinks li {
+  position: relative;
+}
+
+.LineNum {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  right: 0%;
+  top: 0%;
+  transform: translate(40%, -30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d5d5d5;
+  font-size: 12px;
+  line-height: 14.5px;
+  font-family: "Matter-Regular";
+}
+
+.ActiveNavLink {
+  color: #fff;
+  font-family: "Matter-Regular";
+  font-weight: 400;
+}
+
+.ActiveNavLink::before {
+  width: 100%;
+}
+
+.NavLinks {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+}
+
+.NavBar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #000000b2;
+  backdrop-filter: blur(40px);
+  position: sticky;
+  z-index: 1;
+  top: 0px;
+}
+
+/* category */
+
+body {
+  overflow-x: hidden;
+}
+
+.OneCol {
+  /* width: 480px; */
+  width: 29.63%;
+}
+
+.ForAlign {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 90px; */
+  width: 100%;
+}
+
+.VauxContainer {
+  width: 84.85%;
+  margin: auto;
+}
+
+.category {
+  margin-top: 70px;
+}
+
+.InnerCol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.Card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ImgClass {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ImgLink {
+  border-radius: 18px;
+  overflow: hidden;
+  width: 100%;
+  cursor: none;
+  background-color: #f5f5f5;
+}
+
+.Description {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #cfcfcfde;
+  font-family: "Farro-Regular";
+}
+
+.HeadingOfDec {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Matter-Regular";
+  color: #fff;
+}
+
+.Branding {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  gap: 28px;
+  row-gap: 10px;
+  color: #ff8001;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: "Matter-Regular";
+}
+
+.CardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.SmallSize {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.BigSize {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+.FirstBrand {
+  list-style: none;
+}
+
+.DecLink {
+  text-decoration: none;
+}
+
+.BrandingLink {
+  text-decoration: none;
+}
+
+.FirstCol {
+  height: auto;
+}
+
+.SecondCol {
+  height: auto;
+}
+
+.ThirdCol {
+  height: auto;
+}
+
+.Click {
+  width: 0px;
+  height: 0px;
+  border: none;
+  outline: none;
+}
+
+.MiniNav {
+  display: none;
+}
+
+.titleForBrand {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 100%;
+  background: #e4dbdb00;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7b7d7b;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #757575;
+}
+
+/* .CopyRight {
+    display: inline-block;
+    background-color: #333633;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 3px 10px;
+    position: absolute;
+    transition: all 0.3s;
+    top: 0%;
+    z-index: 10;
+    display: none;
+  } */
+
+.ViewPro {
+  position: absolute;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: "Farro-Regular";
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 13px;
+  box-shadow: 0px 0px 0px 5px rgba(6, 6, 6, 0.306);
+  /* transition: all 0.3s; */
+  pointer-events: none;
+  transform: scale(1);
+  background-image: url("../img/Thumbnail-1.mp4");
+}
+
+.PlayIcon {
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 1920px) {
+  .VauxContainer {
+    width: 1620px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .HeadingOfWeb {
+    width: 100%;
+  }
+
+  .Description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .HeadingOfDec {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .InnerCol {
+    gap: 70px;
+  }
+
+  .CardBody {
+    gap: 20px;
+  }
+
+  .LogoBar {
+    padding: 30px 20px;
+  }
+
+  .AboutWeb {
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .NavLinks {
+    justify-content: space-between;
+    gap: 1vw;
+  }
+}
+
+@media only screen and (max-width: 1005px) {
+  .LogoLink {
+    width: 100px;
+  }
+
+  .NavLinks {
+    justify-content: space-between;
+    gap: 0vw;
+  }
+
+  .LineNum {
+    width: 15px;
+    height: 15px;
+    transform: translate(25%, -11%);
+    font-size: 10px;
+    line-height: 14.5px;
+  }
+
+  .AboutWebHeading {
+    width: 80%;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .TempBox {
+    gap: 35px;
+  }
+
+  .TextAnimation {
+    height: 27px;
+    overflow: hidden;
+  }
+
+  .Description {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .HeadingOfDec {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .Branding {
+    gap: 24px;
+    row-gap: 0px;
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .LogoBarText {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Description {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .ColFirstForAni {
+    margin-top: 0px;
+  }
+
+  .category {
+    overflow: hidden;
+  }
+
+  .ForAlign {
+    flex-direction: column;
+  }
+
+  .OneCol {
+    width: 100%;
+  }
+
+  .HeadingOfDec {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+  }
+
+  .TempBox {
+    gap: 24px;
+  }
+
+  .LogoBarText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .ImgClass {
+    border-radius: 8px;
+  }
+
+  .WeatherLogoLink {
+    display: flex;
+  }
+
+  .ImgLink {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .Branding {
+    gap: 19px;
+    row-gap: 0px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .InnerCol {
+    gap: 50px;
+  }
+
+  .ColSecondForAni {
+    margin-top: 40px;
+  }
+
+  .ColThirdForAni {
+    margin-top: 40px;
+  }
+
+  .LogoLink {
+    width: 80px;
+  }
+
+  .AboutWebHeading {
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: 700;
+    padding: 10px;
+    font-family: "Farro-Bold";
+  }
+
+  .MiniNav {
+    display: block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #7a00fc;
+    z-index: 7;
+    bottom: 6vw;
+    right: 6vw;
+    font-size: 30px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .RemoveInMobile {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .NavLinks {
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+    transition: all 0.3s;
+    opacity: 0%;
+  }
+
+  .ActiveNavLi {
+    opacity: 100%;
+  }
+
+  .NavLink {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .NavBar {
+    position: fixed;
+    height: 0vw;
+    width: 0vw;
+    top: unset;
+    bottom: 23vw;
+    right: 6vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.42);
+    transition: all 0.3s;
+    background-color: #000000ad;
+    overflow: hidden;
+    z-index: 6;
+  }
+
+  .ShowNavBar {
+    padding: 0px;
+    height: auto;
+    /* height: 97vw; */
+    width: auto;
+    padding: 20px 25px;
+  }
+
+  .Icon {
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  .ActiveIcon {
+    transform: rotate(45deg);
+  }
+
+  .DisableScroll {
+    overflow: hidden;
+  }
+
+  .TextAnimation {
+    height: 30px;
+    color: rgb(230, 221, 221);
+  }
+
+  .Screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #4a4a4a00;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    display: none;
+  }
+
+  .ShowScreen {
+    display: block;
+  }
+
+  .LogoBar {
+    padding: 20px 0px;
+  }
+
+  .VauxContainer {
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .RemoveInMobile {
+    width: 100%;
+    padding: 0px;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .block:last-child {
+    color: white;
+  }
+
+  .LineNum {
+    width: 15px;
+    height: 15px;
+    transform: translate(25%, -22%);
+    font-size: 12px;
+    line-height: 14.5px;
+    color: whitesmoke;
+  }
+
+  .titleForBrand {
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Matter-Regular";
+    padding: 5px 3px;
+    margin-bottom: 16px;
+    color: #7a00fc;
+  }
+}

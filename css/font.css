@@ -48,3 +48,40 @@
   font-family: CircularStd-Bold;
   src: url(../fonts/CircularStd-Bold.woff);
 }
+
+
+/*  */
+@font-face {
+  src: url("../fonts/Matter-Light.ttf");
+  font-family: "Matter-Light";
+}
+
+@font-face {
+  src: url("../fonts/Matter-Regular.ttf");
+  font-family: "Matter-Regular";
+}
+
+@font-face {
+  src: url("../fonts/Faro-LightLucky.ttf");
+  font-family: "Farro-Light";
+}
+
+@font-face {
+  src: url("../fonts/Faro-RegularLucky.ttf");
+  font-family: "Farro-Regular";
+}
+
+@font-face {
+  src: url("../fonts/Faro-SemiBoldLucky.ttf");
+  font-family: "Farro-Medium";
+}
+
+@font-face {
+  src: url("../fonts/Faro-SemiBoldLucky.ttf");
+  font-family: "Farro-SemiBoldLucky";
+}
+
+@font-face {
+  src: url("../fonts/Faro-BoldLucky.ttf");
+  font-family: "Farro-Bold";
+}
